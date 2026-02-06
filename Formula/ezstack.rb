@@ -16,7 +16,7 @@ class Ezstack < Formula
   depends_on "fzf"
 
   def install
-    system "go", "build", *std_go_args(ldflags: "-s -w"), "./cmd/ezs"
+    system "go", "build", "-ldflags", "-s -w", "-o", bin/"ezs", "./cmd/ezs"
   end
 
   def caveats
