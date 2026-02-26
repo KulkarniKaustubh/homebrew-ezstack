@@ -5,9 +5,9 @@
 class Ezstack < Formula
   desc "Manage stacked PRs with git worktrees"
   homepage "https://github.com/KulkarniKaustubh/ezstack"
-  url "https://github.com/KulkarniKaustubh/ezstack/archive/refs/tags/v0.1.1.tar.gz"
+  url "https://github.com/KulkarniKaustubh/ezstack/archive/refs/tags/v0.1.3.tar.gz"
   license "MIT"
-  sha256 "bc22ee787036afde2133944f63030f02c8522e920ee65fc3b8a00bb9e79b3d22"
+  sha256 "49251656e65864cde9dbc61dd6330bd5767d0cf69fa295339ab3aa4de251d514"
   head "https://github.com/KulkarniKaustubh/ezstack.git", branch: "main"
 
   depends_on "go" => :build
