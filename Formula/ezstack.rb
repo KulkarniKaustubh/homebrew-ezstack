@@ -5,13 +5,13 @@
 class Ezstack < Formula
   desc "Manage stacked PRs with git worktrees"
   homepage "https://github.com/KulkarniKaustubh/ezstack"
-  version "4.8.3"
+  version "4.8.4"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/KulkarniKaustubh/ezstack/releases/download/v4.8.3/ezstack_darwin_amd64.tar.gz"
-      sha256 "903481041ea90f3f1aa668e2697b5e1d743a3313cdc8abbd4fcc0ccd831f315c"
+      url "https://github.com/KulkarniKaustubh/ezstack/releases/download/v4.8.4/ezstack_darwin_amd64.tar.gz"
+      sha256 "ff38bbc2a4c50b354550136ea97c2b60e837781733ef920a786c3e1957d4e996"
 
       define_method(:install) do
         bin.install "ezs"
@@ -19,8 +19,8 @@ class Ezstack < Formula
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/KulkarniKaustubh/ezstack/releases/download/v4.8.3/ezstack_darwin_arm64.tar.gz"
-      sha256 "da76c5b72fc0c0fac6edcf18c9e63712b0c5d7dff860eb084b60cab4425f3bb2"
+      url "https://github.com/KulkarniKaustubh/ezstack/releases/download/v4.8.4/ezstack_darwin_arm64.tar.gz"
+      sha256 "ffd7a27258baf7c414de15e0a19b382b095b11aea91cc580af7996137213425c"
 
       define_method(:install) do
         bin.install "ezs"
@@ -31,16 +31,16 @@ class Ezstack < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/KulkarniKaustubh/ezstack/releases/download/v4.8.3/ezstack_linux_amd64.tar.gz"
-      sha256 "e738430ad3f0c975c0a7dc2a5178366f6eb2142b001f4e2158d5a2f900a5aeb8"
+      url "https://github.com/KulkarniKaustubh/ezstack/releases/download/v4.8.4/ezstack_linux_amd64.tar.gz"
+      sha256 "82dfa6a301ee034c37a89d022ffa0d1a79fd92f0a1915a455522581bc80d827c"
       define_method(:install) do
         bin.install "ezs"
         bin.install "ezs-mcp"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/KulkarniKaustubh/ezstack/releases/download/v4.8.3/ezstack_linux_arm64.tar.gz"
-      sha256 "8bbd5f75ca695f77b85f852fad4b76596316df33c723495238440d9d613e9ab0"
+      url "https://github.com/KulkarniKaustubh/ezstack/releases/download/v4.8.4/ezstack_linux_arm64.tar.gz"
+      sha256 "9ecca47d1101f622f29edafd22e777cdff724011f18b2574ac81cf23d8b1c65b"
       define_method(:install) do
         bin.install "ezs"
         bin.install "ezs-mcp"
