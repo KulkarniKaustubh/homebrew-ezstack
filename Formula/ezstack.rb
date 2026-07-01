@@ -11,7 +11,7 @@ class Ezstack < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/KulkarniKaustubh/ezstack/releases/download/v4.8.5/ezstack_darwin_amd64.tar.gz"
-      sha256 "6166afebff7a8cfe74753f3aa34dee4bad79086bcc6e4f3568e0fc4503074889"
+      sha256 "aed9ee0a6a56648d8baea672bcf2b8eb9411cd48ccd6cf2fba22a760e4cd5ce6"
 
       define_method(:install) do
         bin.install "ezs"
@@ -20,7 +20,7 @@ class Ezstack < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/KulkarniKaustubh/ezstack/releases/download/v4.8.5/ezstack_darwin_arm64.tar.gz"
-      sha256 "d9d9cda9b1a3dbf3afb256fd2bc8bd403d4aa45ebe34523650a61c65b52ecec5"
+      sha256 "3f8dd485c485828d07d8502fd27b06f390406e00cdd0c9c3032d66b1b1fe30b5"
 
       define_method(:install) do
         bin.install "ezs"
@@ -32,7 +32,7 @@ class Ezstack < Formula
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
       url "https://github.com/KulkarniKaustubh/ezstack/releases/download/v4.8.5/ezstack_linux_amd64.tar.gz"
-      sha256 "121e710835614ad45490f3ba50ad3517eef7bfe518bd2a4773d0185104e497f0"
+      sha256 "5d5dc60de467d29e6d52c9cd3db138faa0042005ea5dfc5ddde20a587bca0aa6"
       define_method(:install) do
         bin.install "ezs"
         bin.install "ezs-mcp"
@@ -40,7 +40,7 @@ class Ezstack < Formula
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/KulkarniKaustubh/ezstack/releases/download/v4.8.5/ezstack_linux_arm64.tar.gz"
-      sha256 "e829beeda29740b44603bc69a40af184f4d4c63379ee314eadf901a086929305"
+      sha256 "390d9379bd25b00a06aea64eef65d00505d030d8c5ec6a9bf0bdc0a6f23c8bc5"
       define_method(:install) do
         bin.install "ezs"
         bin.install "ezs-mcp"
